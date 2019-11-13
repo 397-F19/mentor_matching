@@ -33,7 +33,16 @@ class Onboarding extends React.Component {
             <Block flex space="around" style={{ zIndex: 2 }}>
               <Block center>
                 <LoginFields />
-
+                <Block center>
+                <Button
+                  style={styles.button}
+                  color={argonTheme.COLORS.SECONDARY}
+                  onPress={() => navigation.navigate("Home")}
+                  textStyle={{ color: argonTheme.COLORS.BLACK }}
+                >
+                  Get Started
+                </Button>
+              </Block>
               </Block>
           </Block>
         </Block>
