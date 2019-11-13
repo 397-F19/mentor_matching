@@ -30,8 +30,9 @@ class Card extends React.Component {
         </TouchableWithoutFeedback>
         <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
           <Block flex space="between" style={styles.cardDescription}>
-            <Text size={14} style={styles.cardTitle}>{item.title}</Text>
-            <Text size={12} muted={!ctaColor} color={ctaColor || argonTheme.COLORS.ACTIVE} bold>{item.cta}</Text>
+            <Text size={14} style={styles.cardTitle}>{item.name}</Text>
+            <Text size={12} style={styles.cardTitle}>{item.introduction}</Text>
+            <Text size={12} muted={!ctaColor} color={ctaColor || argonTheme.COLORS.ACTIVE} bold>{item.contactInfo}</Text>
           </Block>
         </TouchableWithoutFeedback>
       </Block>
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.COLORS.WHITE,
     marginVertical: theme.SIZES.BASE,
     borderWidth: 0,
-    minHeight: 114,
+    minHeight: 150,
     marginBottom: 16
   },
   cardTitle: {
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
     // borderRadius: 3,
   },
   horizontalImage: {
-    height: 122,
+    height: 150,
     width: 'auto',
   },
   horizontalStyles: {
