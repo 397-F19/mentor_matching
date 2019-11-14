@@ -26,6 +26,10 @@ class Home extends React.Component {
   }
 
   render() {
+    const {navigation} = this.props
+    const options = navigation.getParam('options','')
+
+    console.log("options: ", options.company)
     return (
       <Block flex center style={styles.home}>
         {this.renderArticles()}

@@ -6,14 +6,13 @@ import {
   StatusBar,
   Dimensions
 } from "react-native";
-import { Block, Button, Text, theme } from "galio-framework";
-
+import { Block, Text, theme } from "galio-framework";
+import {Button} from 'react-native-elements'
 const { height, width } = Dimensions.get("screen");
 
 import argonTheme from "../constants/Theme";
 import Images from "../constants/Images";
-import LoginFields from "../components/LoginFields";
-
+import FindMentor from "../components/FindMentor";
 
 class Onboarding extends React.Component {
   render() {
@@ -28,11 +27,10 @@ class Onboarding extends React.Component {
             style={{ height, width, zIndex: 1 }}
           />
         </Block>
-
         <Block flex space="between" style={styles.padded}>
             <Block flex space="around" style={{ zIndex: 2 }}>
               <Block center>
-                <LoginFields />
+                <FindMentor navigation={navigation}/>
 
               </Block>
           </Block>
@@ -59,11 +57,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0
   },
   logo: {
-    width: 200,
-    height: 60,
-    zIndex: 2,
-    position: 'relative',
-    marginTop: '-50%'
+    width: 100,
+    height: 30,
+    zIndex: 1,
   },
   title: {
     marginTop:'-5%'

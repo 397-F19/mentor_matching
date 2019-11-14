@@ -109,6 +109,15 @@ const ProfileStack = createStackNavigator(
 
 const HomeStack = createStackNavigator(
   {
+    Filter: {
+      screen:Onboarding,
+      navigationOptions: ({ navigation }) => ({
+        header: (
+          <Header left={<Block />} white transparent title="" navigation={navigation} />
+        ),
+        headerTransparent: true
+      })
+    },
     Home: {
       screen: Home,
       navigationOptions: ({ navigation }) => ({
@@ -135,12 +144,6 @@ const HomeStack = createStackNavigator(
 // divideru se baga ca si cum ar fi un ecrna dar nu-i nimic duh
 const AppStack = createDrawerNavigator(
   {
-    Onboarding: {
-      screen: Onboarding,
-      navigationOptions: {
-        drawerLabel: () => {}
-      }
-    },
     Home: {
       screen: HomeStack,
       navigationOptions: navOpt => ({
