@@ -10,7 +10,6 @@ import { Block, Text, theme } from "galio-framework";
 import {Button} from 'react-native-elements'
 const { height, width } = Dimensions.get("screen");
 
-import argonTheme from "../constants/Theme";
 import Images from "../constants/Images";
 import FindMentor from "../components/FindMentor";
 
