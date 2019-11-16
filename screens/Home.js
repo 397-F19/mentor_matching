@@ -23,15 +23,42 @@ class Home extends React.Component {
   };
   
 
-  handleChange = () => {
+  handleChange = (options) => {
     const filteredMentor = [];
     db.ref('mentors/').on('value', snap =>{
-      const allMentor = snap.val();
-      console.log("response", allMentor);
-      this.setState({ selectedMentors: allMentor });
+      const allMentor = snap.val(); 
+      // console.log("response", allMentor);
+      const filtered = this.filterMentors(allMentor, options)  // HAVE TO PASS OPTIONS HERE 
+      console.log(filtered)
+      this.setState({ selectedMentors: filtered});
     })
     //this.setState({selectedMentors:[sdada]})
     //this.state.selectedMentors
+  }
+
+  filterMentors = (mentors_list, options) => {
+    selected = [] 
+    for (var i = 0; i < mentors_list.length; i++){
+      var count = 0 
+      if (mentors_list[i]) {
+        if (mentors_list[i].company === options.company || options.company === "") {
+          count++; 
+        }
+        if (mentors_list[i].location === options.location || options.location === "") {
+          count++; 
+        }
+        if (mentors_list[i].role === options.role || options.role === "") {
+          count++; 
+        }
+        if (mentors_list[i].experience === options.experience || options.experience === "") {
+          count++; 
+        }
+        if (count == 4) {
+          selected.push(mentors_list[i])
+        }
+    }
+    }
+    return selected
   }
 
   renderArticles = () => {
@@ -59,10 +86,10 @@ class Home extends React.Component {
         <Button
           style={styles.button}
           color={argonTheme.COLORS.SECONDARY}
-          onPress={this.handleChange}
+          onPress={() => this.handleChange(options)}
           textStyle={{ color: argonTheme.COLORS.BLACK }}
         >
-          Get Mentorlist
+          Find Mentors
         </Button>
       </Block>
       

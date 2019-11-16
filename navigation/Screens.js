@@ -148,7 +148,7 @@ const AppStack = createDrawerNavigator(
       screen: HomeStack,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} title="Home" />
+          <DrawerItem focused={focused} title="Mentor List" />
         )
       })
     },
@@ -160,27 +160,11 @@ const AppStack = createDrawerNavigator(
         )
       })
     },
-    Account: {
-      screen: Register,
+    Onboarding: {
+      screen: Onboarding,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Register" title="Account" />
-        )
-      })
-    },
-    Elements: {
-      screen: ElementsStack,
-      navigationOptions: navOpt => ({
-        drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Elements" title="Elements" />
-        )
-      })
-    },
-    Articles: {
-      screen: ArticlesStack,
-      navigationOptions: navOpt => ({
-        drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Articles" title="Articles" />
+          <DrawerItem focused={focused} screen="Onboarding" title="Onboarding" />
         )
       })
     }

@@ -40,13 +40,13 @@ export default function LoginFields({navigation}) {
       navigation.push('Home',{options})
     }
 
-    const companyOptions = ['Amazon','Airbnb','Microsoft', 'Uber','Facebook','LinkedIn','Google','IBM','Twitter','Pinterest','Others']
+    const companyOptions = ['Amazon','Airbnb','Microsoft', 'Uber','Facebook','LinkedIn','Google','IBM','Twitter','Pinterest','Other']
 
     const roleOptions = ['Mobile App Engineer', 'Web App Engineer', 'Infrastructure Engineer'
-     ,'Fullstack Engineer', 'Data Scientist', 'Bussiness Analyst', 'Human Resource', 'UI/UX Designer','Others']
+     ,'Fullstack Engineer', 'Data Scientist', 'Business Analyst', 'Human Resources', 'UI/UX Designer','Others']
 
     const locationOptions = ['Atlanta','Bay Area','Boston','Chicago','New York','Houston','Seattle','Others']
-    const yearOptions = ['1- year', '1 ~ 3 years','3 ~ 5 years', '5 ~ 10 years', '10+ years']
+    const yearOptions = ['< 1 year', '1 ~ 2 years','3 ~ 4 years', '5 ~ 10 years', '10+ years']
     return (
         <View style={{
             flex: 1,
