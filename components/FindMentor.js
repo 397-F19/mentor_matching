@@ -31,6 +31,7 @@ export default function LoginFields({navigation}) {
 
     const onFindMentorPress = ()=> {
       //Pass filter conditions to Home
+      console.log("press find mentor")
       const options = {
         company,
         role,
