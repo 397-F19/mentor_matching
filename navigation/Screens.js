@@ -111,12 +111,6 @@ const HomeStack = createStackNavigator(
   {
     Filter: {
       screen:Onboarding,
-      navigationOptions: ({ navigation }) => ({
-        header: (
-          <Header left={<Block />} white transparent title="" navigation={navigation} />
-        ),
-        headerTransparent: true
-      })
     },
     Home: {
       screen: Home,
