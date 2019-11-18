@@ -51,14 +51,80 @@
       "bio": "Hi, I'm an infra guy."
     }, 
     "6":{
-      "name": "Jenny Lively",
+      "name": "Samir Khuller",
       "image": "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
-      "company": "Google",
+      "company": "Northwestern University",
+      "experience": "> 1 year",
+      "location": "Evanston", 
+      "email": "Samir@google.com", 
+      "role": "Chair and Professor of Computer Science",
+      "bio": "Hi, I'm a designer."
+    },
+    "7":{
+      "name": "Nabil Alshurafa",
+      "image": "https://images.unsplash.com/photo-1505503693641-1926193e8d57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
+      "company": "Northwestern University",
+      "experience": "> 1 year",
+      "location": "Evanston", 
+      "email": "Nabil@google.com", 
+      "role": "Assistant Professor of Preventive Medicine and (by courtesy)",
+      "bio": "Hi, I'm a app developer."
+    },
+    "8":{
+      "name": "Brenna Argall",
+      "image": "https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1115&q=80",
+      "company": "Northwestern University",
+      "experience": "> 1 years",
+      "location": "Evanston", 
+      "email": "Brenna@airbnb.com", 
+      "role": "Associate Professor of Computer Science",
+      "bio": "Hi, I like infra."
+    },
+    "9":{
+      "name": "Larry Birnbaum",
+      "image": "https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2760&q=80",
+      "company": "FaceNorthwestern Universitybook",
+      "experience": "> 1 years",
+      "location": "Evanston", 
+      "email": "Larry@fb.com", 
+      "role": "Professor of Computer Science",
+      "bio": "Hi, I'm a people's person."
+    },
+    "10":{
+      "name": "Fabian Bustamante",
+      "image": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80",
+      "company": "Northwestern University",
+      "experience": "> 1 year",
+      "location": "Evanston", 
+      "email": "Fabian@pinterest.com", 
+      "role": "Professor of Computer Science",
+      "bio": "Hi, I'm a designer."
+    },
+    "11":{
+      "name": "Simone Campanoni",
+      "image": "https://images.unsplash.com/photo-1515486191131-efd6be9f711f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+      "company": "Northwestern University",
+      "experience": "3 ~ 4 years",
+      "location": "Evanston", 
+      "email": "Simone@google.com", 
+      "role": "Assistant Professor of Computer Science",
+      "bio": "Hi, I'm an infra guy."
+    }, 
+    "12":{
+      "name": "Yan Chen",
+      "image": "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+      "company": "Northwestern University",
       "experience": "< 1 year",
-      "location": "Bay Area", 
-      "email": "jenny@google.com", 
-      "role": "UI/UX Designer",
+      "location": "Evanston", 
+      "email": "Yan@google.com", 
+      "role": "Professor of Computer Science",
       "bio": "Hi, I'm a designer."
     }
+
+
+
   }
+
+
+
 }
