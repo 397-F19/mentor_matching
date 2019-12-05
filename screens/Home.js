@@ -22,6 +22,19 @@ class Home extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   };
   
+  componentWillMount() {
+    const {navigation} = this.props
+    const options = navigation.getParam('options','')
+    console.log("options: ", options)
+    db.ref('mentors/').on('value', snap =>{
+      const allMentor = snap.val(); 
+      // console.log("response", allMentor);
+      const filtered = this.filterMentors(allMentor, options)  // HAVE TO PASS OPTIONS HERE 
+      console.log(filtered)
+      this.setState({ selectedMentors: filtered});
+    })
+
+  }
 
   handleChange = (options) => {
     const filteredMentor = [];
@@ -75,22 +88,20 @@ class Home extends React.Component {
   }
 
   render() {
-    const {navigation} = this.props
-    const options = navigation.getParam('options','')
+    
 
-    console.log("options: ", options)
     const { selectedMentors } = this.state;
     return (
       <Block flex center style={styles.home}>
         {this.renderArticles()}
-        <Button
+        {/* <Button
           style={styles.button}
           color={argonTheme.COLORS.SECONDARY}
           onPress={() => this.handleChange(options)}
           textStyle={{ color: argonTheme.COLORS.BLACK }}
         >
           Find Mentors
-        </Button>
+        </Button> */}
       </Block>
       
     );

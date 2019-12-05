@@ -38,6 +38,7 @@ export default function LoginFields({navigation}) {
         experience,
         location
       }
+      
       navigation.push('Home',{options})
     }
 
