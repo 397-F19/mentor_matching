@@ -38,7 +38,8 @@ export default function LoginFields({navigation}) {
         experience,
         location
       }
-      navigation.navigate('Home',{options})
+      
+      navigation.push('Home',{options})
     }
 
     const companyOptions = ['','Amazon','Airbnb','Microsoft', 'Uber','Facebook','LinkedIn','Google','IBM','Twitter','Pinterest','Others']

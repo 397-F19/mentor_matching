@@ -23,15 +23,17 @@ class Card extends React.Component {
 
     return (
       <Block row={horizontal} card flex style={cardContainer}>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
+        <TouchableWithoutFeedback onPress={() => {}}>
           <Block flex style={imgContainer}>
             <Image source={{uri: item.image}} style={imageStyles} />
           </Block>
         </TouchableWithoutFeedback>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
+        <TouchableWithoutFeedback onPress={() => {}}>
           <Block flex space="between" style={styles.cardDescription}>
             <Text size={14} style={styles.cardTitle}>{item.name}</Text>
-            <Text size={12} style={styles.cardTitle}>{item.bio}</Text>
+            <Text size={12} style={styles.cardTitle} numberOfLines={2} ellipsizeMode='tail'>{item.bio}</Text>
+            <Text size={12} style={styles.cardTitle}>Company: {item.company}</Text>
+            <Text size={12} style={styles.cardTitle}>Location: {item.location}</Text>
             <Text size={12} muted={!ctaColor} color={ctaColor || argonTheme.COLORS.ACTIVE} bold>{item.email}</Text>
           </Block>
         </TouchableWithoutFeedback>
