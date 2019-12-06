@@ -161,7 +161,8 @@ const AppStack = createDrawerNavigator(
           <DrawerItem focused={focused} screen="Onboarding" title="Onboarding" />
         )
       })
-    }
+    },
+    
   },
   Menu
 );

@@ -75,6 +75,7 @@ class Home extends React.Component {
   }
 
   render() {
+    console.disableYellowBox = true;
     const {navigation} = this.props
     const options = navigation.getParam('options','')
 
@@ -89,7 +90,7 @@ class Home extends React.Component {
           onPress={() => this.handleChange(options)}
           textStyle={{ color: argonTheme.COLORS.BLACK }}
         >
-          Find Mentors
+         
         </Button>
       </Block>
       

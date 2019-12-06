@@ -21,7 +21,7 @@ class Onboarding extends React.Component {
   constructor(props) {
     super(props); 
       this.state = {
-        selectPage: false,
+        selectPage: true,
       };
       this.handleClickFindMentor = this.handleClickFindMentor.bind(this);
       this.handleClickAddProfile = this.handleClickAddProfile.bind(this);
@@ -56,7 +56,9 @@ class Onboarding extends React.Component {
       );
     }
 
-
+/* <Block center>
+          {this.renderOptions()}
+        </Block> */
 
   render() {
     const { navigation } = this.props;
@@ -64,9 +66,7 @@ class Onboarding extends React.Component {
     return (
       
       <Block flex style={styles.container}>
-        <Block center>
-          {this.renderOptions()}
-        </Block>
+       
         <StatusBar hidden />
         <Block flex center>
         <ImageBackground

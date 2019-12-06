@@ -38,16 +38,18 @@ export default function LoginFields({navigation}) {
         experience,
         location
       }
-      navigation.push('Home',{options})
+      navigation.navigate('Home',{options})
     }
 
-    const companyOptions = ['Amazon','Airbnb','Microsoft', 'Uber','Facebook','LinkedIn','Google','IBM','Twitter','Pinterest','Other']
+    const companyOptions = ['','Amazon','Airbnb','Microsoft', 'Uber','Facebook','LinkedIn','Google','IBM','Twitter','Pinterest','Others']
 
-    const roleOptions = ['Mobile App Engineer', 'Web App Engineer', 'Infrastructure Engineer'
+    const roleOptions = ['','Mobile App Engineer', 'Web App Engineer', 'Infrastructure Engineer'
      ,'Fullstack Engineer', 'Data Scientist', 'Business Analyst', 'Human Resources', 'UI/UX Designer','Others']
 
-    const locationOptions = ['Atlanta','Bay Area','Boston','Chicago','New York','Houston','Seattle','Others']
-    const yearOptions = ['< 1 year', '1 ~ 2 years','3 ~ 4 years', '5 ~ 10 years', '10+ years']
+    const locationOptions = ['','Atlanta','Bay Area','Boston','Chicago','New York','Houston','Seattle','Others']
+    const yearOptions = ['','< 1 year', '1 ~ 2 years','3 ~ 4 years', '5 ~ 10 years', '10+ years']
+    console.disableYellowBox = true;
+
     return (
         <View style={{
             flex: 1,
